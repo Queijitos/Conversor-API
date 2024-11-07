@@ -29,5 +29,7 @@ document.getElementById('currency-form').addEventListener('submit',async functio
     const getExgaenteRate = await getExgaenteRate(Damoeda, Paramoeda);
 if(getExgaenteRate){
     const ConvertedValue = valor * exchangeRate;
+
+    const Resultado = document.getElementById(Resultado);
 }
 });
