@@ -22,5 +22,7 @@ document.getElementById('currency-form').addEventListener('submit',async functio
     event.preventDefault();
 
     // Obter valores de entrada
-    
+    const valor = parseFloat(document.getElementById('amount').value);
+    const damoeda = document.getElementById('damoeda').value;
+    const ParaMoeda = document.getElementById('ParaMoeda').value;
 });
