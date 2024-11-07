@@ -19,5 +19,8 @@ async function getExgaente(daMoeda, paraMoeda) {
 }
 // ##################################################################################################################
 document.getElementById('currency-form').addEventListener('submit',async function(event){
+    event.preventDefault();
 
+    // Obter valores de entrada
+    
 });
