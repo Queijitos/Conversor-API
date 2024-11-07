@@ -23,6 +23,11 @@ document.getElementById('currency-form').addEventListener('submit',async functio
 
     // Obter valores de entrada
     const valor = parseFloat(document.getElementById('amount').value);
-    const damoeda = document.getElementById('Damoeda').value;
-    const ParaMoeda = document.getElementById('Paramoeda').value;
+    const Damoeda = document.getElementById('Damoeda').value;
+    const Paramoeda = document.getElementById('Paramoeda').value;
+
+    const getExgaenteRate = await getExgaenteRate(Damoeda, Paramoeda);
+if(getExgaenteRate){
+    const ConvertedValue = valor * exchangeRate;
+}
 });
