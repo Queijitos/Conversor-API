@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Conversor Com API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <div id="form">
+        <h1 style="text-align: center;">Conversor De Moedas</h1>
+        <div id="input-box">
+            <form onsubmit="converter(); return false;">
+                <div id="texts">
+                    <label for="valor">Valor</label>
+                    <input required type="number" id="valor" />
+                </div>
+                <div id="texts">
+                    <label for="Damoeda">De</label>
+                    <select id="Damoeda">
+                        <option value="BRL">Reais (BRL)</option>
+                        <option value="USD">Dólar (USD)</option>
+                        <option value="EUR">Euros (EUR)</option>
+                    </select>
+                </div>
+                <div id="texts">
+                    <label for="Paramoeda">Para</label>
+                    <select id="Paramoeda">
+                        <option value="BRL">Reais (BRL)</option>
+                        <option value="USD">Dólar (USD)</option>
+                        <option value="EUR">Euros (EUR)</option>
+                    </select>
+                </div>
+                <h2 id="Resultado"></h2>
+                <div id="button-continue">
+                    <button type="submit">Converter</button>
+                </div>
+                <div id="limpar">
+                    <button type="button" onclick="document.getElementById('valor').value=''">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
