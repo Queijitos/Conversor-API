@@ -8,12 +8,12 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-    <div id="form">
+    <form id="form">
         <h1 style="text-align: center;">Conversor De Moedas</h1>
         <div id="input-box">
-            <form>
+        
                 <div id="texts">
-                    <label for="valor" id="valor">Valor</label>
+                    <label for="valor" id="">Valor</label>
                     <input required type="number" id="valor" />
                 </div>
                 <div id="texts">
@@ -32,16 +32,16 @@
                         <option value="EUR">Euros (EUR)</option>
                     </select>
                 </div>
-                <h2 id="Resultado"></h2>
+                <h2 id="resultado"></h2>
                 <div id="button-continue">
                     <button type="submit">Converter</button>
                 </div>
                 <div id="limpar">
-                    <button type="button" onclick="document.getElementById('valor').value=''">Limpar</button>
+                    <button type="reset">Limpar</button>
                 </div>
-            </form>
+        
         </div>
-    </div>
+    </form>
 
     <script src="main2.js"></script>
 </body>
