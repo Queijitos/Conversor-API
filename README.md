@@ -1,4 +1,5 @@
 # Conversor de Moedas com API
+![](Captura%20de%20tela_14-11-2024_115546_127.0.0.1.jpeg)
 
 Este projeto é um conversor de moedas simples que usa a [API ExchangeRate](https://www.exchangerate-api.com/) para obter taxas de câmbio e calcular o valor convertido entre diferentes moedas. A interface permite selecionar a moeda de origem, a moeda de destino e o valor a ser convertido. 
 
