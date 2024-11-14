@@ -102,4 +102,4 @@ function alternarCor() {
 Para que o conversor funcione, a chave de API fornecida (apiKey) deve estar ativa e válida. Caso contrário, é necessário gerar uma nova chave acessando a ExchangeRate API.
 
 # Desenvolvedor 
-(https://github.com/Queijitos)[José Walter]
+!(José Walter)[https://github.com/Queijitos]
