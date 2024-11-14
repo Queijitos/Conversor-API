@@ -36,3 +36,8 @@ document.getElementById('form').addEventListener('submit', async function(event)
     alert('Erro ao buscar a cotação. Tente novamente');
   }
 });
+function alternarCor() {
+  // Alterna a classe "modo-escuro" no corpo da página
+  document.body.classList.toggle("modo-escuro");
+  document.getElementById('form').classList.toggle("modo-escuro");
+}
