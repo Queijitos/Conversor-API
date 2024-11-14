@@ -98,5 +98,8 @@ function alternarCor() {
 * Selecione a moeda de origem e a moeda de destino.
 * Clique em "Converter" para ver o resultado.
 ** Alternar Modo Escuro/Claro: Clique no botão "Alternar Cor" para mudar o modo de visualização da página.
-Observação
+### Observação
 Para que o conversor funcione, a chave de API fornecida (apiKey) deve estar ativa e válida. Caso contrário, é necessário gerar uma nova chave acessando a ExchangeRate API.
+
+# Desenvolvedor 
+(https://github.com/Queijitos)[José Walter]
