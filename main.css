@@ -5,12 +5,22 @@
     font-family: Arial, sans-serif;
 }
 
+/* Modo Claro - padrão */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f2f5;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Escuro */
+body.modo-escuro {
+    background-color: #000000;
+    color: #ffffff;
+}
+form.modo-escuro{
+    background-color: #000000;
+    color: #ffffff;
 }
 
 form {
