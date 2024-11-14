@@ -27,3 +27,22 @@ O arquivo JavaScript (`main2.js`) contém as principais funções para obter dad
 ```javascript
 const apiKey = `e0a459495a2f5bd0b33fa6cc`;
 const ApiURL = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/`;
+
+* apiKey: Chave de API necessária para autenticação ao acessar a ExchangeRate API.
+* ApiURL: URL base da API para obter as taxas de câmbio.
+
+## Função getExchangeRate
+async function getExchangeRate(daMoeda, paraMoeda) {
+  try {
+    const response = await fetch(`${ApiURL}${daMoeda}`);
+    const data = await response.json();
+    if (data.result === "success") {
+      return data.conversion_rates[paraMoeda];
+    } else {
+      throw new Error("Erro ao buscar taxa de câmbio");
+    }
+  } catch (error) {
+    console.error("Erro:", error);
+    return null;
+  }
+}
